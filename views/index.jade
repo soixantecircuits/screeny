@@ -1,0 +1,25 @@
+doctype 5
+
+html
+  head
+    title Multiscreen usage example
+    script(type='text/javascript', src='/socket.io/socket.io.js')
+    != renderStyles()
+
+  body
+    #container
+      //.container-row
+      #container1.container
+      //-  #container2.container
+      //-.container-row
+        #container3.container
+        #container4.container
+
+    //-h1 SessionSockets usage example
+    //-p='You should see below your session hash with "bar" as initial value for the "foo" key'
+
+    //-textarea#t(readonly='1')
+    //-input#foo(placeholder='now type in a new value for foo')
+    //-span=' then you should see foo value updated'
+
+    != renderJs()
