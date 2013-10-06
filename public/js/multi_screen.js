@@ -218,8 +218,8 @@ function App(containerId, fullWidth, fullHeight, viewX, viewY, viewWidth, viewHe
   }
 
   this.documentMouseMove = function(event) {
-    mouseX = (event.clientX - windowHalfX);
-    mouseY = (event.clientY - windowHalfY);
+    mouseX = (event.clientX - event.windowHalfX);
+    mouseY = (event.clientY - event.windowHalfY);
   };
 
   //

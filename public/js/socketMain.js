@@ -13,7 +13,9 @@
   function onDocumentMouseMoveSender(event) {
     socket.emit('DocumentMouseMove', {
       clientX: event.clientX,
-      clientY: event.clientY
+      clientY: event.clientY,
+      windowHalfX: window.innerWidth/2,
+      windowHalfY: window.innerHeight/2
     });
   }
 
