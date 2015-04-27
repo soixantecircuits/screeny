@@ -4,6 +4,8 @@ var http = require('http')
   , express = require('express')
   , app = express();
 
+require('iced-coffee-script/register');
+
 var cookieParser = express.cookieParser('your secret sauce')
   , sessionStore = new connect.middleware.session.MemoryStore();
 
@@ -18,7 +20,7 @@ BundleUp(app, __dirname + '/assets', {
 });
 
 var Screens = [],
-    port = 3000;
+    port = 3001;
 // To actually serve the files a static file
 // server needs to be added after Bundle Up
 
